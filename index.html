@@ -4,11 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SVILUPPO DI UNA PAGINA WEB - Blog Epicode</title>
+    <style>
+      div p {
+        margin: 2px 0px;
+      }
+      .articoli-correlati {
+        margin: 16px 0px;
+      }
+    </style>
   </head>
   <body>
-    <h2>
-      Primi passi operativi per creare un modello di pagina HTML per un post. Scopri come iniziare in modo facile.
-    </h2>
     <img src="assets/img/logo.svg" alt="Logo Epicode" />
     <h1>EPICODE - Il Blog dei Developers</h1>
     <br />
@@ -16,13 +21,13 @@
 
     <ul>
       <li>
-        <a href="index.html">Home</a>
+        <a href="index.html" target="_self">Home</a>
       </li>
       <li>
-        <a href="">Articoli</a>
+        <a href="" target="_self">Articoli</a>
       </li>
       <li>
-        <a href="">Lavora con noi</a>
+        <a href="" target="_self">Lavora con noi</a>
       </li>
     </ul>
 
@@ -38,5 +43,117 @@
       <li>Contenuti centrali variabili del tag &lt;main&gt;(corpo principale)</li>
       <li>Contenuti di fine pagina comuni, da inserire nel tag &lt;footer&gt;</li>
     </ul>
+    <p>
+      Formattazione del codice <br /><br />
+      Il testo dell'articolo dovrà essere formattato per identificare tutte le parti da selezionare con i CSS. Perciò i
+      passi saranno:
+    </p>
+    <ol>
+      <li>Progettare il markup assegnando ad ogni specifico testo il tag appropriato</li>
+      <li>Scrivere I'HTML dai tag esterni a quelli interni e dall'alto verso il basso</li>
+      <li>Applicare gli stili CSS</li>
+    </ol>
+
+    <p>L'applicazione di stii CSS è cresciuta negli anni fino a raggiungere la diffusione pressoché totale</p>
+
+    <!-- <table border="1" cellPadding="20" cellSpasing="10"> -->
+    <table>
+      <thead>
+        <tr>
+          <caption>
+            Diffusione dei CSS
+          </caption>
+          <!-- <th colspan="5" style="background-color: coral">Diffusione dei CSS</th> -->
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>Anno</th>
+          <!-- <td rowspan="3">Categoria</td> -->
+          <th>% di utilizzo</th>
+          <th>Supporto Browser</th>
+        </tr>
+        <tr>
+          <td>2000</td>
+          <td>20%</td>
+          <td>17%</td>
+        </tr>
+        <tr>
+          <td>2002</td>
+          <td>35%</td>
+          <td>22%</td>
+        </tr>
+        <tr>
+          <td>2004</td>
+          <td>45%</td>
+          <td>42%</td>
+        </tr>
+        <tr>
+          <td>2008</td>
+          <td>80%</td>
+          <td>51%</td>
+        </tr>
+        <tr>
+          <td>2012</td>
+          <td>100%</td>
+          <td>76%</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>
+      Un test di validazione potrà essere fatto tramite il tool online
+      <a href="https://it.wikipedia.org/wiki/CSS#Esempi_di_CSS3"></a> dedicato allo scopo. <br />Una volta ottimizzato
+      il tutto, avremo raggiunto il nostro obiettivo ed essere stati dei veri developers come loro:
+    </p>
+
+    <iframe
+      width="790"
+      height="444"
+      src="https://www.youtube.com/embed/IjzdMvuzxDY"
+      title="Diventare web developer e trovare lavoro in 3 mesi - La Storia di Elisa"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen
+    ></iframe>
+    <br />
+    <p>Vuoi rimanere aggiornato su altre novità del blog? Iscriviti alla nostra newsletter:</p>
+    <form>
+      <label for="email">Inserisci l'email:</label>
+      <input type="email" placeholder="mariorossi@gmail.com" id="email" required />
+      <br />
+      <p style="display: inline">Iscriviti:</p>
+      <button type="submit" onclick="alert('Iscritto')">Invio</button>
+    </form>
+
+    <h5>Articoli Correlati</h5>
+    <div class="articoli-correlati">
+      <a href="https://www.html.it/articoli/html5-la-validazione-del-codice/">Validare il codice HTML</a>
+      <p>Categoria: develop</p>
+      <p>Data: 18-9-2020</p>
+    </div>
+
+    <div class="articoli-correlati">
+      <a href="https://www.html.it/articoli/gestione-degli-errori/">Correggere la sintassi</a>
+      <p>Categoria: develop</p>
+      <p>Data: 16-9-2020</p>
+    </div>
+
+    <div class="articoli-correlati">
+      <a href="https://www.html.it/magazine/consigli-per-ridurre-il-peso-delle-pagine-web/">Meno kb nella pagina</a>
+      <p>Categoria: ottimizzazione</p>
+      <p>Data: 30-9-2020</p>
+    </div>
   </body>
+
+  <footer>
+    <hr />
+
+    <small>Blog Epicode &copy2023</small>
+    <small
+      >Testata online di Mario Rossi, registrata con prot. n.213/2018 - via Luigi Enaudi 2 - Milano P.IVA
+      00112233.</small
+    >
+    <address><a href="mailto:info@epicode.school">info@epicode.school</a></address>
+  </footer>
 </html>
